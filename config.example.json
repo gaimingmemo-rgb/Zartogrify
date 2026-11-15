@@ -1,0 +1,9 @@
+{
+    "active_provider": "openrouter",
+    "active_model": "google/gemini-2.0-flash-exp:free",
+    "keys": {
+        "openrouter": "YOUR_OPENROUTER_API_KEY",
+        "groq": "YOUR_GROQ_API_KEY",
+        "openai": "YOUR_OPENAI_API_KEY"
+    }
+}
