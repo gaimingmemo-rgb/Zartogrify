@@ -45,8 +45,8 @@ class AIEngine:
                 headers = {
                     "Authorization": f"Bearer {api_key}",
                     "Content-Type": "application/json",
-                    "HTTP-Referer": "https://zartostudios.local",
-                    "X-Title": "Zartogrify"
+                    "HTTP-Referer": "https://rev-network.ddns.net",
+                    "X-Title": "Revision-Ai"
                 }
                 payload = {
                     "model": model,

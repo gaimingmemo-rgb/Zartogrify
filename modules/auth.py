@@ -21,7 +21,7 @@ class OAuthHandler(http.server.SimpleHTTPRequestHandler):
         self.send_response(200)
         self.send_header("Content-type", "text/html")
         self.end_headers()
-        self.wfile.write(b"<html><body style='background:#111;color:#a6e3a1;text-align:center;padding-top:50px;'><h2>Authentication Successful! You can close this tab and return to Zartogrify.</h2></body></html>")
+        self.wfile.write(b"<html><body style='background:#111;color:#a6e3a1;text-align:center;padding-top:50px;'><h2>Authentication Successful! You can close this tab and return to Revision-Ai.</h2></body></html>")
 
     def log_message(self, format, *args):
         pass
@@ -51,7 +51,7 @@ class AuthEngine:
         data = self._read_db()
         data[email] = {"password": password, "verified": False, "code": code}
         self._write_db(data)
-        print(f"\n[ZARTOGRIFY AUTH] Verification code for {email}: {code}\n")
+        print(f"\n[REVISION-AI AUTH] Verification code for {email}: {code}\n")
         return code
 
     def verify_code(self, email: str, entered_code: str) -> bool:
